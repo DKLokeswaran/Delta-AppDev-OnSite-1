@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upHour"
+            android:layout_toStartOf="@+id/upMin"
+            android:layout_above="@+id/Hour"
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_baseline_expand_less_24" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upMin"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_baseline_expand_less_24"/>
+
+        <ImageButton
+            android:id="@+id/upSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Sec"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_toEndOf="@id/Min"
+            app:srcCompat="@drawable/ic_baseline_expand_less_24"/>
+
+
+        <TextView
+            android:id="@+id/Hour"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/upMin"
+            android:layout_toStartOf="@id/sc1"
+            android:gravity="center"
+
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sc1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/upMin"
+            android:layout_toStartOf="@id/Min"
+            android:gravity="center"
+            android:text=":"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/Min"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/upMin"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="30sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text=":"
+            android:id="@+id/sc2"
+            android:gravity="center"
+            android:layout_toEndOf="@id/Min"
+            android:layout_below="@id/upMin"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/Sec"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/upMin"
+            android:layout_toEndOf="@+id/sc2"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+
+        <ImageButton
+            android:id="@+id/downHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Hour"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/downMin"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_expand_more_24" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downMin"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Min"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_expand_more_24"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downSec"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_expand_more_24"
+            android:layout_toEndOf="@id/downMin"
+            android:layout_below="@+id/Sec"
+            android:layout_marginLeft="10dp"/>
+
+
+</RelativeLayout>
